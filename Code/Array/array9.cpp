@@ -41,5 +41,6 @@ Constraints
 using namespace std;
 int main()
 {
-    int a;
+    int a,i,n,j;
+    
 }
