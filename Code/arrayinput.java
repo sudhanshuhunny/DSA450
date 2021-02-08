@@ -11,12 +11,13 @@ public class arrayinput {
         int[] a=new int[m];
         int[] b = new int[n];
         for (int i = 0; i < m; i++) {
-            s.nextInt(a[i]);
+            a[i]=s.nextInt();
         }
         for (int i = 0; i < b.length; i++) {
-            s.nextInt(b[i]);
+            b[i]=s.nextInt();
         }
         System.out.println(Arrays.toString(a));
         System.out.println(Arrays.toString(b));
         
+}
 }
