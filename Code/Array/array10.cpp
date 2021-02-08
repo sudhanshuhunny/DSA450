@@ -1,6 +1,7 @@
 /*Minimum number of jumps 
 Medium Accuracy: 32.96% Submissions: 28928 Points: 4
-Given an array of integers where each element represents the max number of steps that can be made forward from that element. Find the minimum number of jumps to reach the end of the array (starting from the first element). If an element is 0, then you cannot move through that element.
+Given an array of integers where each element represents the max number of steps that can be made forward from that element.
+Find the minimum number of jumps to reach the end of the array (starting from the first element). If an element is 0, then you cannot move through that element.
 
 Example 1:
 
@@ -31,4 +32,21 @@ Constraints:
 0 <= ai <= 107*/
 #include<bits/stdc++.h>
 using namespace std;
-void main()
+void main(){
+    int n;
+    cin>>n;
+    int arr[n],count=1;
+    for (int i = 0; i < n; i++)
+    {
+        cin>>arr[i];
+    }
+    for (int i = 0; i < n; i++)
+    {
+        for (int j = arr[i]; i < n; i++)
+        {
+            count+=0;
+        }
+        
+    }
+    
+}

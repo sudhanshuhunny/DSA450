@@ -42,6 +42,21 @@ Constraints
 using namespace std;
 int main()
 {
-    int a,i,n,j;
+    int n,k;
+    cin>>n;
+    cin>>k;
+    int ar[n];
+    
+    for (int i = 0; i < n; i++)
+    {
+        cin>>ar[i];
+
+    }
+    sort(ar,ar+n);
+    int min=ar[0]; cout<<min;
+    int max=ar[n-1]; cout<<max;
+    int maxPossibleHeight=(max-k)-(min+k);    
+    cout<<maxPossibleHeight;
+    return 0;
     
 }

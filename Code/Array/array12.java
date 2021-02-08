@@ -44,5 +44,28 @@ Constraints:
 1 <= N, M <= 5*104
 0 <= arr1i, arr2i <= 106
 */
-#include<bits/stdc++.h>
-using namespace std;
+package Code.Array;
+
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class array12  {
+    public static void main(String[] args) {
+        Scanner s=new Scanner(System.in);
+        int m = s.nextInt();
+        int n=s.nextInt();
+        int[] a=new int[m];
+        int[] b = new int[n];
+        for (int i = 0; i < m; i++) {
+            s.nextInt(a[i]);
+        }
+        for (int i = 0; i < b.length; i++) {
+            s.nextInt(b[i]);
+        }
+        System.out.println(Arrays.toString(a));
+        System.out.println(Arrays.toString(b));
+        
+
+    }
+
+}

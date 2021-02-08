@@ -39,7 +39,23 @@ Can you solve the problem using only constant, O(1) extra space?
 Can you solve the problem with runtime complexity less than O(n2)?
 */
 #include<bits/stdc++.h>
-void main()
+using namespace std;
+int main()
 {
-    
+    int n,i;
+    cin>>n;
+    int ar[n];
+    for ( i = 0; i < n; i++)
+    {
+        cin>>ar[i];
+    }
+    for(i=1;1<n;i++)
+    {
+        if(ar[i]==ar[i-1])
+        {
+            cout<<ar[i];
+            break;
+        }
+    }
+    return 0;
 }
