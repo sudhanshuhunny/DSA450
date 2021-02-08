@@ -44,3 +44,39 @@ Constraints:
 
 
 */
+#include<bits/stdc++.h>
+using namespace std;
+
+int maxSubArraySum(int a[],int n)
+{
+    int max_gb=a[0];
+    int max_c=a[0];
+    for (int i = 1; i < n; i++)
+    {
+        max_c=max(a[i],max_c+a[i]);
+        if(max_c>max_gb)
+        {
+            max_gb=max_c;
+        }
+    }
+    return max_gb;
+    
+}
+
+
+int main()
+{
+    int n,i;
+    cin>>n;
+    int a[n];
+    for ( i = 0; i < n; i++)
+    {
+        cin>>a[i];
+
+    }
+    int b = maxSubArraySum(a,n);
+    cout<<b;
+
+    
+   return 0; 
+}

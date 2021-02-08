@@ -65,6 +65,21 @@ public class array12  {
         System.out.println(Arrays.toString(a));
         System.out.println(Arrays.toString(b));
         
+        for (int i = 0; i < a.length; i++) {
+            for (int j = 0; j < b.length; j++) {
+                if(a[i]>b[j]){
+                    swap(a[i],b[j]);
+                }
+            }
+            
+        }
+
+    }
+
+    public static void swap(int i, int j) {
+        int temp=i;
+        i=j;
+        j=temp;
 
     }
 
