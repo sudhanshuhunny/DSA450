@@ -1,7 +1,9 @@
 /*
 Given an array of integers. Find the Inversion Count in the array. 
 
-Inversion Count: For an array, inversion count indicates how far (or close) the array is from being sorted. If array is already sorted then the inversion count is 0. If an array is sorted in the reverse order then the inversion count is the maximum. 
+Inversion Count: For an array, inversion count indicates how far (or close) the array is from being sorted.
+If array is already sorted then the inversion count is 0. 
+If an array is sorted in the reverse order then the inversion count is the maximum. 
 Formally, two elements a[i] and a[j] form an inversion if a[i] > a[j] and i < j.
  
 
@@ -36,3 +38,36 @@ Constraints:
 
 
 */
+#include<bits/stdc++.h>
+using namespace std;
+// int swap(int i, int j)
+// {
+//     int temp=i;
+//     i=j;
+//     j=temp;
+// }
+
+int main()
+{
+    int n,i,j,count=0;
+    cin>>n;
+    int a[n];
+    for ( i = 0; i < n; i++)
+    {
+        cin>>a[i];
+
+    }
+    for ( i = 0; i < n; i++)
+    {
+        for(j=0;j<n-1-i;j++)
+        {
+            if(a[j]>a[j+1])
+            {
+                count++;
+            }
+        }
+    }
+    
+ cout<<count;   
+return 0;
+}
