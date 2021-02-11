@@ -29,21 +29,37 @@
 
 package Code.Array;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 class good
 {
+    // public static void main(String[] args) {
+        
+    //     Scanner s= new Scanner(System.in);
+    //     int t=s.nextInt();
+    //     while(t>0){
+    //         int n=s.nextInt();
+    //         int f=fact(n);
+    //         System.out.println(f+" ");
+    //         t--;
+    //     }
+        
+    // }
+
+    // Array List method for factorial
     public static void main(String[] args) {
-        
-        Scanner s= new Scanner(System.in);
+        ArrayList fac=new ArrayList<>();
+        Scanner s =new Scanner(System.in);
         int t=s.nextInt();
-        while(t>0){
-            int n=s.nextInt();
-            int f=fact(n);
-            System.out.println(f+" ");
-            t--;
+        int [] f=new int[t];
+        for (int i = 0; i < f.length; i++) {
+            f[i]=s.nextInt();   
+            fac.add(fact(f[i]));
         }
+        System.out.println(fac);
         
+
     }
 
     public static int fact(int n) {
