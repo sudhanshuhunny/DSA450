@@ -29,3 +29,35 @@ Expected Auxiliary Space: O(n1 + n2 + n3)
 Constraints:
 1 <= n1, n2, n3 <= 10^5
 The array elements can be both positive or negative integers. */
+
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int m,n,p,i,j,k,temp;
+    // brute force approach 
+    cin>>m>>n>>p;
+    int a[m],b[n],c[p];
+    for(i=0;i<m;i++)
+    {   cin>> a[i];}
+    for(i=0;i<n;i++)
+    {   cin>> b[i];}
+    for(i=0;i<p;i++)
+    {   cin>> c[i];}
+
+    for(i=0;i<m;i++)
+    {
+        for(j=0;j<n;j++)
+        {
+            for(k=0;k<p;k++)
+            {
+                
+                if(a[i]==b[j]&& a[i]==c[k])
+                {
+                    cout<<endl<<a[i]<<" ";
+                }
+            }
+        }
+    }
+    return 0;
+}
