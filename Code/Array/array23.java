@@ -31,6 +31,47 @@
 
 package Code.Array;
 
+import java.util.ArrayList;
+import java.util.Scanner;
+
 public class array23 {
+    // public static void main(String[] args) {
+    //     int max_pro=0;
+    //     int max_c=0;
+        
+    //     ArrayList nums=new ArrayList<>();
+    //     Scanner s= new Scanner(System.in);
+    //     int f=s.nextInt();
+    //     for (int i = 0; i < f; i++) {
+            
+    //         nums.add(s.nextInt());
+    //     }
+    //     for (int i = 0; i < f; i++) {
+    //         int p=max_c  nums.get(i);
+    //         max_c=Math.max(nums.get(i),;
+    //     }
+    // }
     
+    public static void main(String[] args) {
+        int max_pr=0;
+        int max_c=0;
+        Scanner s=new Scanner(System.in);
+        int n=s.nextInt();
+        int [] nums=new int[n];
+        
+        for (int i = 0; i < nums.length; i++) {
+            nums[i]=s.nextInt();
+        }
+        for (int i = 0; i < nums.length; i++) {
+            max_c=Math.max(nums[i], max_c*nums[i]);
+            if(max_c>max_pr)
+            {
+              
+                max_pr=max_c;
+                //System.out.println(max_pr);  
+            }
+           // System.out.println(max_pr);    
+        }
+        System.out.println(max_pr);
+    }
 }
