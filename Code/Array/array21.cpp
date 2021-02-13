@@ -44,17 +44,28 @@ int main()
     int i,j,n;
     cin>>n;
     int a[n];
-    int max_c=0;
-    int max_gb=0;
+
+    int current=0;
     for(i=0;i<n;i++)
     {   cin >> a[i];}
    
     for ( i = 0; i < n; i++)
     {
-        for(j=i+1;j<n;j++)
+        for(j=i+1;j<n+1;j++)
         {
+            cout<<"*";
             
+           
+           
+            // current+=a[j];
+            // cout<<"*";
+            // if(a[i]+current==0)
+            // {
+            //     cout<<"YES";
+            // }
+            // else return -1;
         }
+        cout<<endl;
     }
     
     return 0;

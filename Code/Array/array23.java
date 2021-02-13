@@ -53,8 +53,7 @@ public class array23 {
     // }
     
     public static void main(String[] args) {
-        int max_pr=0;
-        int max_c=0;
+    
         Scanner s=new Scanner(System.in);
         int n=s.nextInt();
         int [] nums=new int[n];
@@ -62,16 +61,30 @@ public class array23 {
         for (int i = 0; i < nums.length; i++) {
             nums[i]=s.nextInt();
         }
-        for (int i = 0; i < nums.length; i++) {
-            max_c=Math.max(nums[i], max_c*nums[i]);
-            if(max_c>max_pr)
-            {
-              
-                max_pr=max_c;
-                //System.out.println(max_pr);  
+        
+        System.out.println(max_Product(nums,n));
+    
+
+    
+}
+
+private static int max_Product(int[] nums, int n) {
+		int max=nums[0];
+        int min=nums[0];
+        int ans=nums[0];
+
+       
+        for (int i = 1; i < n ; i++) {
+            if(nums[i]<0){
+                int  swap=min;
+                min=max;
+                max=swap;
             }
-           // System.out.println(max_pr);    
+            max=Math.max(nums[i], max*nums[i]);
+            min=Math.min(nums[i], min*nums[i]);
+            ans=Math.max(max,ans);
         }
-        System.out.println(max_pr);
-    }
+        return ans;
+        
+	}
 }
