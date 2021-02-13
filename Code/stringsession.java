@@ -96,9 +96,9 @@ public class stringsession {
         // // String str=s.nextLine(); // accepts  till enter 
         // // System.out.println(str);
         // }
-            String str="AYA";
-            //substrings(str);
-            System.out.println(palindrome(str));
+            String str="abc";
+            substrings(str);
+            //System.out.println(palindrome(str));
         
     }
     

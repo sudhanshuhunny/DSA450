@@ -63,10 +63,28 @@ public class session6 {
     //     printInc(n-1); // Pushing in the Stack
     //     System.out.println(n); // Poping from the stack
         
+        
+    // Subsequence Recursion tree
+    
+    String str="abc";
+    subseq("",str);
 
 
 
 }
+
+private static void subseq(String proc, String unpro_str) {
+
+    if(unpro_str.isEmpty()){
+        System.out.println(proc);
+        return;
+    }
+    char ch =unpro_str.charAt(0);
+    unpro_str=unpro_str.substring(1); // 1 se leke end tak ki string rhegi 
+// upar nya object bnke phla char hatra hai
+    subseq(proc+ch,unpro_str);
+    subseq(proc,unpro_str);
+}   
     
 }
 
