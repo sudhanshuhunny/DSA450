@@ -101,7 +101,7 @@ public class stringsession {
             //System.out.println(palindrome(str));
         
     }
-    
+    // String is palindrome or not
     private static boolean palindrome(String str) {
         for (int i = 0; i < str.length()/2; i++) {
             if(str.charAt(i)!=str.charAt(str.length()-1-i))
@@ -120,7 +120,7 @@ public class stringsession {
             }
         }
     }
-    // String is palindrome or not
+    
 
 
 }
