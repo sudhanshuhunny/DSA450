@@ -25,7 +25,9 @@
 // the array sums up to 10.
 
 // Your Task:
-// You don't need to read input or print anything. Your task is to complete the function find3Numbers() which takes the array arr[], the size of the array (N) and the sum (X) as inputs and returns True if there exists a triplet in the array arr[] which sums up to X and False otherwise.
+// You don't need to read input or print anything.
+// Your task is to complete the function find3Numbers() which takes the array arr[],
+// the size of the array (N) and the sum (X) as inputs and returns True if there exists a triplet in the array arr[] which sums up to X and False otherwise.
 
 
 // Expected Time Complexity: O(N2)

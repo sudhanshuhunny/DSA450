@@ -49,14 +49,13 @@ int main()
     for(i=0;i<n;i++)
     {   cin >> a[i];}
    
-    for(i=0;i<n;i++)
+    for ( i = 0; i < n; i++)
     {
-        if(a[i]==0 || max_c+a[i]==0)
+        for(j=i+1;j<n;j++)
         {
-            cout<<"YES";
+            
         }
-        max_c+=a[i];
-    }    
+    }
     
     return 0;
 }
