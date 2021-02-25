@@ -25,10 +25,13 @@ public class sudoku_solver {
 
         if(board[row][col]==0)
         {
+            
             //processing
             for (int i = 1; i <=9; i++) {
                 if(isSafe(board,row,col,i)){
                     board[row][col]=i;
+                    
+                    
                 }
             
             }
@@ -39,7 +42,7 @@ public class sudoku_solver {
         }
     }
 
-    private static boolean isSafe(int[][] board, int row, int col, int i) {
+    public static boolean isSafe(int[][] board, int row, int col, int i) {
         return false;
     }
 
